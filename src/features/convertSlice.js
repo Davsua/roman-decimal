@@ -48,7 +48,7 @@ export const convertSlice = createSlice({
         pos,
         insert;
 
-      for (let i = 6; (num = values[i]), (letra = letras[i]); i--) {
+      for (let i = 6; (num = values[i]) && (letra = letras[i]); i--) {
         // Suficientemente grande
         if (actions.payload >= num) {
           // Número de letras repetidas
